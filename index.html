@@ -6,14 +6,66 @@
     <head>
         
 <TItle> 
-            MOJA WEB STRANICA
+            KODACIJA AUTOMOBILA
         </TItle>
-   <h1 align="center" <font style="color: rgb(238, 255, 0);"></font>    DOBRO DOSLI NA NAS WEB-SAJT
+        <style>
+            .example1 {
+             height: 50px;	
+             overflow: hidden;
+             position: relative;
+            }
+            .example1 h3 {
+             font-size: 3em;
+             color: rgb(255, 255, 255);
+             position: absolute;
+             width: 100%;
+             height: 100%;
+             margin: 0;
+             line-height: 50px;
+             text-align: center;
+            
+             -moz-transform:translateX(100%);
+             -webkit-transform:translateX(100%);	
+             transform:translateX(100%);
+          	
+             -moz-animation: example1 15s linear infinite;
+             -webkit-animation: example1 15s linear infinite;
+             animation: example1 15s linear infinite;
+            }
+            
+            @-moz-keyframes example1 {
+             0%   { -moz-transform: translateX(100%); }
+             100% { -moz-transform: translateX(-100%); }
+            }
+            @-webkit-keyframes example1 {
+             0%   { -webkit-transform: translateX(100%); }
+             100% { -webkit-transform: translateX(-100%); }
+            }
+            @keyframes example1 {
+             0%   { 
+             -moz-transform: translateX(100%);
+             -webkit-transform: translateX(100%); 
+             transform: translateX(100%); 		
+             }
+             100% { 
+             -moz-transform: translateX(-100%); 
+             -webkit-transform: translateX(-100%); 
+             transform: translateX(-100%); 
+             }
+            }
+            </style>
+            
+            <div class="example1">
+            <h3> DOBRO  DOSLI  NA  NAS  WEB-SAJT </h3>
+            </div>
+   <h1 align="center" <font style="color: rgba(255, 255, 255, 0.856);"></font>    
+    <br>
+    CAMAJ - AUTO KODIRANJE
    </h1>
    
-   <p align="right"> ovdje se unosi sve na lijevo
+   <p align="right"> Ostavite auto u sigurne ruke!
    <br>
-       <img src ="slika1.jpg" width="900" align="right"/>
+       <img src ="slika1.jpg" width="740" align="right"/>
        <br>
 </head> 
 <h2 <font style="color: blue;"></font> Ovo je glavni podnaslov na stranici  </h2> 
@@ -56,11 +108,9 @@
 <!---Komentar o websajtu mozemo dodati align text right or left-->
 <br>  
 <body>    
-        <body style="background-color:rgb(141, 176, 253);color:rgb(0, 0, 0);"></body>
+        <body style="background-color:rgb(0, 0, 0);color:rgb(255, 255, 255);"></body>
        <br> 
-      <body>    
-        <body style="background-color:rgb(141, 176, 253);color:rgb(0, 0, 0);"></body>
-       <br> 
+      
        <h > OVDJE JE PRIMJER ZA TABELU </h>
 
        <br>
@@ -87,33 +137,7 @@
     </tr>
    </table>
    <br>
-   <h > OVDJE JE PRIMJER ZA FORMU </h>
-   <form action="" method="POST"><br>
-<label>Ovdje unesite ime:</label>
-<input type="text" name="ime" value="ime" /><br>
-<label>Ovdje unesite prezime:</label>
-<input type="text" name="prezime" value="prezime" /><br><br>
-<label>Ovdje izaberite pol:</label> <br>
-<input type="radio" name="pol" value="muski" /> muski<br> 
-<input type="radio" name="pol" value="zenski" /> zenski<br><br>
-<input type="checkbox">1. Sport <br>
-<input type="checkbox">2. Muzika <br>
-<input type="checkbox">3. Programer <br>
-<br> 
-Izaberite Boju:
-<select>
-<option>plava</option>
-<option>zuta</option>
-<option>crvena</option>
-</select>
-<br>
-<textarea rows="6" cols="200"
->Opis</textarea>
-
-<input type="submit" name="posalji" value="posalji">
-<input type="reset" name="ponisti" value="ponisti" >
-
-</form>
+  
           <!---AUDIO/VIDEO TAG---> 
 
 Kliknite na PLAY button da biste culi muziku: <br>
@@ -122,12 +146,14 @@ Kliknite na PLAY button da biste culi muziku: <br>
 <source src="audio.mp3" type="audio/ogg">
 </audio>
 
-<br>
-Kliknite na PLAY button da biste video otvorili: <br>
-<video controls height="300" >
-    <source src="video.mp4" >
-    
+
+
+<div align="center"><br> Kliknite na PLAY button da biste saznali sta znaci kodiranje auta:<br>
+<video controls height="600"  >
+    <source src="CarCoding.mp4" >
 </video>
+</div>
+
 <br>
 <form>
     <br>
@@ -191,6 +217,34 @@ Kliknite na PLAY button da biste video otvorili: <br>
         </tr>
     </tbody>
 </table>
+
+<h > OVDJE JE PRIMJER ZA FORMU </h>
+<form action="" method="POST"><br>
+<label>Ovdje unesite ime:</label>
+<input type="text" name="ime" value="ime" /><br>
+<label>Ovdje unesite prezime:</label>
+<input type="text" name="prezime" value="prezime" /><br><br>
+<label>Ovdje izaberite pol:</label> <br>
+<input type="radio" name="pol" value="muski" /> muski<br> 
+<input type="radio" name="pol" value="zenski" /> zenski<br><br>
+<input type="checkbox">1. Sport <br>
+<input type="checkbox">2. Muzika <br>
+<input type="checkbox">3. Programer <br>
+<br> 
+Izaberite Boju:
+<select>
+<option>plava</option>
+<option>zuta</option>
+<option>crvena</option>
+</select>
+<br>
+<textarea rows="6" cols="200"
+>Opis</textarea>
+
+<input type="submit" name="posalji" value="posalji">
+<input type="reset" name="ponisti" value="ponisti" >
+
+</form>
 
 </body>
 <br>
