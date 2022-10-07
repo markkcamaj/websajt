@@ -13,3 +13,21 @@ h3{
 #poravnanje{
     text-align: center;
 }
+
+.color{
+    color: black;
+}
+
+a:link{
+    color: cornflowerblue;
+    background-color: rgba(29, 13, 255, 0.637);
+}
+a:visited{
+    color: deeppink;
+}
+a:hover{
+    color: rgb(20, 255, 51);
+}
+a:active{
+    color: rgb(255, 231, 20);
+}
